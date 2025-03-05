@@ -1,0 +1,23 @@
+CellInst 5
+Inst C19 FF2 0 9
+Inst C20 FF2 1 9
+Inst C21 FF2 1 9
+Inst C22 FF1 0 8
+Inst C23 FF1 0 8
+
+C13/D	map	C19/D0
+C13/Q	map	C19/Q0
+C5/D	map	C19/D1
+C5/Q	map	C19/Q1
+C4/D	map	C20/D0
+C4/Q	map	C20/Q0
+C12/D	map	C20/D1
+C12/Q	map	C20/Q1
+C3/D	map	C21/D0
+C3/Q	map	C21/Q0
+C14/D	map	C21/D1
+C14/Q	map	C21/Q1
+C2/D	map	C22/D
+C2/Q	map	C22/Q
+C18/D	map	C23/D
+C18/Q	map	C23/Q

@@ -1,0 +1,167 @@
+Alpha 1
+Beta 5
+Gamma 5
+DieSize 0.0 0.0 200.0 300.0
+NumInput 6
+Input INPUT0 0 40
+Input INPUT1 0 100
+Input INPUT2 0 195
+Input INPUT3 0 250
+Input CLK1 0 20
+Input CLK2 0 150
+NumOutput 3
+Output OUTPUT0 200 70
+Output OUTPUT1 200 130
+Output OUTPUT2 200 250
+FlipFlop 1 FF1 10.0 30.0 3
+Pin D 0.0 20.0
+Pin Q 10.0 20.0
+Pin CLK 5 2
+FlipFlop 2 FF2 15.0 30.0 5
+Pin D0 0.0 25.0
+Pin D1 0.0 5.0
+Pin Q0 15.0 25.0
+Pin Q1 15.0 5.0
+Pin CLK 6 2
+FlipFlop 2 FF2A 19.0 30.0 4
+Pin D0 0.0 25.0
+Pin D1 0.0 5.0
+Pin Q0 19.0 25.0
+Pin Q1 19.0 5.0
+Gate BUFF 10.0 30.0 2
+Pin I 0.0 20.0
+Pin O 10.0 20.0
+Gate AND2 10.0 30.0 3
+Pin X 0 5.0
+Pin Y 0 25.0
+Pin O 10.0 20.0
+
+GatePower FF1 10.0
+GatePower FF2 17.0
+GatePower FF2A 18.0
+NumInstances 18
+Inst C1 BUFF 10 30
+Inst C2 FF1 10 180
+Inst C3 FF1 20 240
+Inst C4 FF1 20 90
+Inst C5 FF1 30 30
+Inst C6 BUFF 50 240
+Inst C7 BUFF 60 180
+Inst C8 BUFF 60 90
+Inst C9 BUFF 60 30
+Inst C10 AND2 90 160
+Inst C11 BUFF 100 60
+Inst C12 FF1 110 210
+Inst C13 FF1 130 150
+Inst C14 FF1 140 60
+Inst C15 BUFF 150 240
+Inst C16 BUFF 160 150
+Inst C17 AND2 170 60
+Inst C18 FF1 180 120
+
+NumNets 24
+Net N1 2
+Pin INPUT0
+Pin C1/I
+Net N2 2
+Pin INPUT1
+Pin C4/D
+Net N3 2
+Pin INPUT2
+Pin C2/D
+Net N4 2
+Pin INPUT3
+Pin C3/D
+Net N5 2
+Pin C1/O
+Pin C5/D
+Net N6 2
+Pin C4/Q
+Pin C8/I
+Net N7 2
+Pin C5/Q
+Pin C9/I
+Net N8 2
+Pin C2/Q
+Pin C7/I
+Net N9 2
+Pin C3/Q
+Pin C6/I
+Net N10 2
+Pin C9/O
+Pin C11/I
+Net N11 2
+Pin C8/O
+Pin C10/X
+Net N12 2
+Pin C7/O
+Pin C10/Y
+Net N13 2
+Pin C6/O
+Pin C12/D
+Net N14 2
+Pin C11/O
+Pin C14/D
+Net N15 2
+Pin C10/O
+Pin C13/D
+Net N16 2
+Pin C12/Q
+Pin C15/I
+Net N17 2
+Pin C14/Q
+Pin C17/X
+Net N18 3
+Pin C13/Q
+Pin C16/I
+Pin C17/Y
+Net N19 2
+Pin C16/O
+Pin C18/D
+Net N20 2
+Pin C17/O
+Pin OUTPUT0
+Net N21 2
+Pin C18/Q
+Pin OUTPUT1
+Net N22 2
+Pin C15/O
+Pin OUTPUT2
+Net CLK1 5
+Pin CLK1
+Pin C12/CLK
+Pin C13/CLK
+Pin C14/CLK
+Pin C18/CLK
+Net CLK2 5
+Pin CLK2
+Pin C2/CLK
+Pin C3/CLK
+Pin C4/CLK
+Pin C5/CLK
+
+PlacementRows 0.0 0.0 10.0 30.0 20
+PlacementRows 0.0 30.0 10.0 30.0 20
+PlacementRows 0.0 60.0 10.0 30.0 20
+PlacementRows 0.0 90.0 10.0 30.0 20
+PlacementRows 0.0 120.0 10.0 30.0 20
+PlacementRows 0.0 150.0 10.0 30.0 20
+PlacementRows 0.0 180.0 10.0 30.0 20
+PlacementRows 0.0 210.0 10.0 30.0 20
+PlacementRows 0.0 240.0 10.0 30.0 20
+PlacementRows 0.0 270.0 10.0 30.0 20
+DisplacementDelay 0.02
+
+QpinDelay FF1 1.0
+QpinDelay FF2 3.0
+QpinDelay FF2A 2.0
+TimingSlack C2 D 2.0
+TimingSlack C3 D 1.0
+TimingSlack C4 D 1.0
+TimingSlack C5 D 0.8
+TimingSlack C12 D 0.2
+TimingSlack C13 D 1.4
+TimingSlack C14 D -0.8
+TimingSlack C18 D 1.0
+
+
